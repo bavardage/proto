@@ -17,7 +17,7 @@ class Camera:
     def step(self, dt):
         pass #TODO: implement object tracking
 
-    def vector_to_screen(self, pt):
+    def vector_to_screen(self, pt): #TODO: memoize this intelligently
         ''' takes world coordinates, returns screen coordinates'''
         x,y = pt
         x -= self.center[0]
